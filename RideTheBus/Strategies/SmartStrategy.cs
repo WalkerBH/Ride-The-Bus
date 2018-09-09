@@ -3,7 +3,7 @@ using RideTheBus.Cards;
 
 namespace RideTheBus.Strategies
 {
-    public class RandomStrategy : Strategy
+    public class SmartStrategy : Strategy
     {
         public override int ChooseColour(Deck deck)
         {
@@ -14,16 +14,17 @@ namespace RideTheBus.Strategies
 
         public override int ChooseHighLow(Card firstCard, Deck deck)
         {
-            return PickRandom(
-                new int[] { HL_HIGH, HL_LOW, HL_EQUAL }
-            );
+            if (firstCard.Rank > 7) return HL_LOW;
+            if (firstCard.Rank < 7) return HL_HIGH;
+            return PickRandom( new int[] { HL_LOW, HL_HIGH });
         }
 
         public override int ChooseInOut(Card firstCard, Card secondCard, Deck deck)
         {
-            return PickRandom(
-                new int[] { IO_IN, IO_ON, IO_OUT }
-            );
+            int diff = Math.Abs(firstCard.Rank - secondCard.Rank);
+
+            if (diff >= 7) return IO_IN;
+            else return IO_OUT;
         }
 
         public override bool ChooseHasFace(Deck deck)

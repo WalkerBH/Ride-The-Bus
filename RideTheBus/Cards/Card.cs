@@ -14,12 +14,10 @@ namespace RideTheBus.Cards
 
         public Card(int index)
         {
-            IsLive = true;
             Suit = index / 13;
             Rank = (index % 13) + 1;
         }
 
-        internal bool IsLive { get; set; }
         public int Suit { get; }
         public int Rank { get; }
 

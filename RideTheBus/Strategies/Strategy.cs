@@ -1,3 +1,4 @@
+using System;
 using RideTheBus.Cards;
 
 namespace RideTheBus.Strategies
@@ -18,11 +19,17 @@ namespace RideTheBus.Strategies
             SUIT_SPADES = Card.SPADES,
             SUIT_HEARTS = Card.HEARTS;
 
+        protected T PickRandom<T>(T[] objects)
+        {
+            int index = new Random().Next(objects.Length);
+            return objects[index];
+        }
+
         public abstract int ChooseColour(Deck deck);
 
-        public abstract int ChooseHighLow(Deck deck);
+        public abstract int ChooseHighLow(Card firstCard, Deck deck);
 
-        public abstract int ChooseInOut(Deck deck);
+        public abstract int ChooseInOut(Card firstCard, Card secondCard, Deck deck);
 
         public abstract bool ChooseHasFace(Deck deck);
 

@@ -40,7 +40,7 @@ namespace RideTheBus
             }
 
             if (Deck.IsEmpty) return;
-            int highLowGuess = Strat.ChooseHighLow(Deck);
+            int highLowGuess = Strat.ChooseHighLow(dealtCard1, Deck);
             Card dealtCard2 = Deck.DealRandomCard();
             if ((highLowGuess == Strategy.HL_HIGH  && !dealtCard2.IsHigherThan(dealtCard1)) ||
                 (highLowGuess == Strategy.HL_LOW   && !dealtCard2.IsLowerThan(dealtCard1)) ||
@@ -51,7 +51,7 @@ namespace RideTheBus
             }
 
             if (Deck.IsEmpty) return;
-            int inOutGuess = Strat.ChooseInOut(Deck);
+            int inOutGuess = Strat.ChooseInOut(dealtCard1, dealtCard2, Deck);
             Card dealtCard3 = Deck.DealRandomCard();
             if ((highLowGuess == Strategy.IO_IN  && !dealtCard3.IsInside(dealtCard1, dealtCard2)) ||
                 (highLowGuess == Strategy.IO_OUT && !dealtCard3.IsOutside(dealtCard1, dealtCard2)) ||
