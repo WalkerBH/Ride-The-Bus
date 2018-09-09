@@ -1,0 +1,11 @@
+/Users/walker/Projects/Misc Programming Projects/Ride The Bus/bin/Debug/netcoreapp2.1/Ride The Bus.deps.json
+/Users/walker/Projects/Misc Programming Projects/Ride The Bus/bin/Debug/netcoreapp2.1/Ride The Bus.runtimeconfig.json
+/Users/walker/Projects/Misc Programming Projects/Ride The Bus/bin/Debug/netcoreapp2.1/Ride The Bus.runtimeconfig.dev.json
+/Users/walker/Projects/Misc Programming Projects/Ride The Bus/bin/Debug/netcoreapp2.1/Ride The Bus.dll
+/Users/walker/Projects/Misc Programming Projects/Ride The Bus/bin/Debug/netcoreapp2.1/Ride The Bus.pdb
+/Users/walker/Projects/Misc Programming Projects/Ride The Bus/obj/Debug/netcoreapp2.1/Ride The Bus.csprojAssemblyReference.cache
+/Users/walker/Projects/Misc Programming Projects/Ride The Bus/obj/Debug/netcoreapp2.1/Ride The Bus.csproj.CoreCompileInputs.cache
+/Users/walker/Projects/Misc Programming Projects/Ride The Bus/obj/Debug/netcoreapp2.1/Ride The Bus.AssemblyInfoInputs.cache
+/Users/walker/Projects/Misc Programming Projects/Ride The Bus/obj/Debug/netcoreapp2.1/Ride The Bus.AssemblyInfo.cs
+/Users/walker/Projects/Misc Programming Projects/Ride The Bus/obj/Debug/netcoreapp2.1/Ride The Bus.dll
+/Users/walker/Projects/Misc Programming Projects/Ride The Bus/obj/Debug/netcoreapp2.1/Ride The Bus.pdb
